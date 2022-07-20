@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+HTML id= em CSS é #
+HTML class= em CSS é .
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    background-color: #04acbf17;
+    font-family: "Oswald";
+    text-align: justify;
+}
+
+h1 {
+    color: #2D6C99;
+}
+
+h1#principal {
+    text-align: center;
+}
+
+h2 {
+    color: #A65A3F;
+}
+
+.basico {
+    color: #FFB900;
+}
+
+.intermediario {
+    color: #04ADBF;
+}
+
+.avancado {
+    color: #E62E27;
+}
+
+.destaque {
+    background-color: #03c7dd2f;
+    padding: 2px;
+    border-radius: 5px;
+}

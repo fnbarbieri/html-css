@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {    /*link já visitado*/
+            color: darkred;
+        }
+
+        a:hover {       /*ao passar o mouse*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {      /*quando é clicado*/
+            color: yellow;
+        }
+        /*:: pseudo elemento*/
+
+        .especial {
+            background-color: cadetblue;
+        }
+
+        .especial::before{
+            content: '→';
+        }
+        
+        a::after {    /*adicionar texto depois*/
+            content: '  [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;  text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com//fnbarbieri" target="_blank">GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCd5Cu5GR3a88XQ-OuGVBilA" target="_blank" class="especial">YouTube</a></li>
+        <li><a href="https://instagram.com/fnbarbieri" target="_blank">Instagram</a></li>
+    </ul>
+</body>
+</html>

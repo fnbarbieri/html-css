@@ -1,0 +1,45 @@
+Box Model
+
+Aninhamento - uma caixa dentro da outra
+
+h1 Olá, Mundo! /h1
+
+ -------------
+| Olá, Mundo! |   ->  caixa
+ -------------
+
+ altura = height
+ largura = width
+ borda = border (linha que circunda o conteúdo/dentro do elemento)
+ preenchimento = padding (borda fica distante do conteúdo/espaço interno)
+ margem = margin (espaço externo)
+ contorno = outline (fora do elemento)
+
+ Tipos de Caixa
+
+ - box-level
+ se inicia em uma linha nova
+ ocupa a largura inteira da tela 100% view port
+
+ -------------------------------------
+ -------------------------------------
+ -----
+  |¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨|
+   ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+--------------------------------------
+--------------------------------------
+------
+ exemplo: div, h1-h6, p, main, header, nav, article, aside, footer, form, video
+
+ - inline-level
+ se inicia ao lado do parágrafo
+ desenha a caixa do tamanho do conteúdo
+ não quebra linha depois do seu final
+
+ ------------------------------------
+ ------------------------------------
+ ------ |¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨| -----------
+ ------- ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨ ------------
+-------------------------------------
+-------
+ exemplo: span, a, code, small, strong, em, sup-sub, label, button, input, select 

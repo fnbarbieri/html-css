@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'delicate' ;
+    src: url('Delmon Delicate Script.otf') format('opentype');
+}
+
+/*
+Tipos de Fonte
+opentype (otf)
+truetyper(ttf)
+enbedded-opentype
+truetype-aat (apple advanced typography)
+cvg
+*/
+
+h1 {
+    font: normal lighter 3em 'delicate';
+    text-align: center;
+}
+
+p {
+    font: normal 300 1em "Quicksand";
+    text-align: justify;
+}
