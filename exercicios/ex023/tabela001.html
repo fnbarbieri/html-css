@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px; /* Largura da tabela*/
+            height: 400px; /* Altura da tabela*/
+            border-collapse: collapse; /* Sem espaços entre as bordas*/
+        }
+
+        /* Destaca só uma linha: 
+
+        <tr class="linha">
+        tr.linha {
+            background-color: rgb(179, 179, 179);
+        }
+
+        Destaca todas as linhas:
+
+        tr {
+            background-color: rgb(179, 179, 179);
+        }*/
+
+        /* Destacar um dado:
+
+        <tr class="dado">
+        td.dado {
+            background-color: yellow;
+        }
+        */
+        
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left; /* Alinhamento Horizontal*/
+            vertical-align: middle; /* Alinhamento Vertical*/
+        }
+
+        /* Alinhamento dados especificos:
+        
+        <td class="numero">
+        .numero {
+            text-align: right;
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Hierarquia de tabela (simples)
+        table - tabela
+            table row - linha
+                table header - cabeçalho
+                table data - info
+    -->
+    <table>
+        <tr> <!-- Primeira Linha -->
+            <td>A1</td> <!-- Dados -->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- Segunda Linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Terceira Linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta Linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <!-- /tr e /td são opcionais-->
+    </table>
+</body>
+</html>
